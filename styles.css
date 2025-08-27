@@ -11,6 +11,13 @@ body {
   overflow-x: hidden;
 }
 
+.nav-container .nav-menu {
+  margin: 0 auto;  /* pushes ul to the horizontal center */
+  list-style: none;
+  display: flex;
+  gap: 20px; /* spacing between items */
+}
+
 .navbar {
   position: fixed;
   top: 0;
