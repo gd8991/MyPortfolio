@@ -8,6 +8,6 @@ document.querySelectorAll('.navbar a').forEach(link => {
 });
 
 // Optional: Show more projects
-document.querySelector('.projects .btn').addEventListener('click', () => {
+document.querySelector('.projects .btn .btn-nav').addEventListener('click', () => {
   // Expand to show more projects...
 });
