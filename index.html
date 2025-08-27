@@ -752,67 +752,11 @@
   <script>
     // Resume download functionality
     document.getElementById('resumeBtn').addEventListener('click', function(e) {
-      e.preventDefault();
-      
-      const resumeContent = `GURDEEP SINGH
-Full-Stack Developer
-
-CONTACT INFORMATION
-Email: gd8991@gmail.com
-Mobile: +91-9742843406
-Address: Chandigarh, India
-
-PROFESSIONAL SUMMARY
-Full Stack Developer with proven expertise in building both Windows and Web applications across diverse domains, including Finance, Healthcare, and Telecom. With a strong command of both front-end and back-end development, I specialize in designing and delivering high-quality, reliable, and scalable solutions that align with modern business needs.
-
-TECHNICAL SKILLS
-Frontend: HTML5, CSS3, JavaScript, TypeScript, Angular, React, Bootstrap
-Backend: .NET, Node.js, RESTful APIs
-Cloud & Tools: Azure, Git, Postman, MongoDB
-Other: SaaS development, Cloud computing
-
-WORK EXPERIENCE
-Full-Stack Developer - Gemini Solutions Ltd. (Current)
-- Developing web and desktop applications for finance domain
-- Working with modern technologies and frameworks
-- Delivering scalable and maintainable solutions
-
-KEY PROJECTS
-1. Pricing Portal
-   - Angular-based web application for Asset Management Company
-   - Manages pricing and business decisions for securities
-   
-2. Batch Reports
-   - WPF application for generating various security reports
-   - Used in Asset Management Company operations
-   
-3. Xenon Enterprises
-   - Corporate website showcasing products and services
-   - Modern responsive design
-
-SERVICES PROVIDED
-- Web Application Development
-- Backend Development & API Design
-- Database Management
-- UI/UX Design Implementation`;
-
-      const blob = new Blob([resumeContent], { type: 'text/plain' });
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = url;
-      link.download = 'Gurdeep_Singh_Resume.txt';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(url);
-      
-      const originalText = this.textContent;
-      this.textContent = 'Downloaded!';
-      this.style.background = '#28a745';
-      setTimeout(() => {
-        this.textContent = originalText;
-        this.style.background = '#ff6b6b';
-      }, 2000);
+      e.preventDefault();      
+     const link = document.createElement('a');
+link.href = 'assets/Files/Gurdeep_Resume.docx'; // Put your actual file path here
+link.download = 'Gurdeep_Singh_Resume.docx';
+link.click();
     });
 
     // Hamburger menu functionality (for hamburger solution)
