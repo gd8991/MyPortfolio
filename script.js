@@ -1,13 +1,4 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('.navbar a').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth' });
-  });
-});
-
-// Optional: Show more projects
-document.querySelector('.projects .btn .btn-nav').addEventListener('click', () => {
-  // Expand to show more projects...
-});
+const link = document.createElement('a');
+link.href = 'assets/Files/Gurdeep_Resume.docx';
+link.download = 'Gurdeep_Singh_Resume.docx';
+link.click();
