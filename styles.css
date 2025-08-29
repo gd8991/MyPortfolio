@@ -600,53 +600,31 @@ footer {
   }
 }
 
-/* SOLUTION 3: Compact Pills (commented out - uncomment to use) */
-/*
-    @media (max-width: 768px) {
-      .navbar {
-        padding: 0.5rem 1rem;
-      }
+.typed-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
 
-      .nav-menu {
-        gap: 0.3rem;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+#home {
+  position: relative;
+  overflow: hidden;
+}
 
-      .btn-nav {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.8rem;
-        border-radius: 15px;
-        background: rgba(0,123,255,0.1);
-        margin: 0.1rem;
-      }
-
-      .btn-nav:hover {
-        background-color: #007bff;
-        color: white;
-      }
-
-      .hero h1 {
-        font-size: 2.5rem;
-      }
-      
-      .hero h2 {
-        font-size: 1.5rem;
-      }
-      
-      .section {
-        padding: 5rem 1rem 1rem;
-      }
-      
-      .tech-grid {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 1rem;
-      }
-
-      .service-grid,
-      .project-grid {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-      }
-    }
-    */
+#typed-developer {
+  font-size: 8vw;
+  font-weight: bold;
+  color: rgba(0,0,0,0.05);
+  letter-spacing: 0.2em;
+  user-select: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}

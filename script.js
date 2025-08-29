@@ -82,3 +82,25 @@ window.addEventListener("scroll", () => {
   const speed = scrolled * 0.5;
   parallax.style.backgroundPosition = `center ${speed}px`;
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Typed.js animation for background "DEVELOPER"
+  if (document.getElementById('typed-developer')) {
+    new Typed("#typed-developer", {
+  strings: [
+    "DEVELOPER",
+    "PROBLEM SOLVER",
+    "THINKER",
+    "EXPLORER"
+  ],
+  typeSpeed: 50, // Speed of typing (lower = faster)
+  backSpeed: 30, // Speed of backspacing
+  backDelay: 2000, // Delay before backspacing
+  startDelay: 500, // Delay before starting
+  loop: true, // Loop the animation
+  showCursor: true, // Show blinking cursor
+  cursorChar: "_", // Custom cursor character
+  smartBackspace: true, // Only backspace what doesn't match the previous string
+    });
+  }
+});
