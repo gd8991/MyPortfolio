@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
   backDelay: 2000, // Delay before backspacing
   startDelay: 500, // Delay before starting
   loop: true, // Loop the animation
-  showCursor: true, // Show blinking cursor
+  showCursor: false, // Show blinking cursor
   cursorChar: "_", // Custom cursor character
   smartBackspace: true, // Only backspace what doesn't match the previous string
     });
