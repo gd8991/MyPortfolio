@@ -598,6 +598,10 @@ footer {
     grid-template-columns: 1fr;
     max-width: 400px;
   }
+
+  .typed-bg{
+    margin-top: 16px;
+  }
 }
 
 .typed-bg {
